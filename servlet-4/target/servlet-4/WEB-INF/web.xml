@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         version="4.0"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         metadata-complete="true">
+<context-param>
+  <param-name>url</param-name>
+  <param-value>https://wobs.top</param-value>
+</context-param>
+  <servlet>
+    <servlet-name>setc</servlet-name>
+    <servlet-class>top.wobs.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setc</servlet-name>
+    <url-pattern>/setc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getc</servlet-name>
+    <servlet-class>top.wobs.servlet.GetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getc</servlet-name>
+    <url-pattern>/getc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>gp</servlet-name>
+    <servlet-class>top.wobs.servlet.InitParameter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gp</servlet-name>
+    <url-pattern>/gp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sd4</servlet-name>
+    <servlet-class>top.wobs.servlet.RequestDispatcher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sd4</servlet-name>
+    <url-pattern>/sd4</url-pattern>
+  </servlet-mapping>
+</web-app>
