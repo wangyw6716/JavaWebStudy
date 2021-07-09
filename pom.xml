@@ -12,6 +12,7 @@
         <module>servlet-3</module>
         <module>servlet-4</module>
         <module>response</module>
+        <module>jdbc</module>
     </modules>
     <packaging>pom</packaging>
 
