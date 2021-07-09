@@ -11,6 +11,7 @@
         <module>servlet-1</module>
         <module>servlet-3</module>
         <module>servlet-4</module>
+        <module>response</module>
     </modules>
     <packaging>pom</packaging>
 
