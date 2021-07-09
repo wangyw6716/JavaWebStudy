@@ -15,7 +15,7 @@ public class GetServlet extends HttpServlet {
 
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
-        resp.getWriter().print("名字:"+username);
+        resp.getWriter().print("名字:" + username);
     }
 
     @Override

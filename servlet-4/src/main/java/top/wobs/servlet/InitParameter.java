@@ -11,7 +11,7 @@ public class InitParameter extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext servletContext = this.getServletContext();
-        String url=(String)servletContext.getInitParameter("url");
+        String url = (String) servletContext.getInitParameter("url");
         resp.getWriter().print(url);
     }
 

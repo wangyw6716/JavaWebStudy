@@ -13,7 +13,7 @@ public class RequestDispatcher extends HttpServlet {
         ServletContext servletContext = this.getServletContext();
         System.out.println("进入了RequestDispatcher");
         javax.servlet.RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/gp");//转发的请求路径
-        requestDispatcher.forward(req,resp);//调用forward实现请求转发
+        requestDispatcher.forward(req, resp);//调用forward实现请求转发
     }
 
     @Override
