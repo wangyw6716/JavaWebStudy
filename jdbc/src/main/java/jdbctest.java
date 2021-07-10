@@ -1,7 +1,6 @@
-import javax.servlet.http.HttpServlet;
 import java.sql.*;
 
-public class jdbctest{
+public class jdbctest {
 
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -15,12 +14,12 @@ public class jdbctest{
         String sql = "select * from smbms_user";
         ResultSet rs = statement.executeQuery(sql);
 
-        while (rs.next()){
-            System.out.println("id"+rs.getObject("id"));
-            System.out.println("userCode"+rs.getObject("userCode"));
-            System.out.println("userName"+rs.getObject("userName"));
-            System.out.println("userPassword"+rs.getObject("userPassword"));
-            System.out.println("birthday"+rs.getObject("birthday"));
+        while (rs.next()) {
+            System.out.println("id" + rs.getObject("id"));
+            System.out.println("userCode" + rs.getObject("userCode"));
+            System.out.println("userName" + rs.getObject("userName"));
+            System.out.println("userPassword" + rs.getObject("userPassword"));
+            System.out.println("birthday" + rs.getObject("birthday"));
             System.out.println("");
         }
         rs.close();

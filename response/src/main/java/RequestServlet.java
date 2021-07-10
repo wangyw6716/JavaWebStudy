@@ -10,7 +10,7 @@ public class RequestServlet extends HttpServlet {
         System.out.println("进入到login");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        System.out.println("username:"+username+"pwd"+password);
+        System.out.println("username:" + username + "pwd" + password);
     }
 
     @Override
