@@ -20,7 +20,7 @@ public class jdbctest {
             System.out.println("userName" + rs.getObject("userName"));
             System.out.println("userPassword" + rs.getObject("userPassword"));
             System.out.println("birthday" + rs.getObject("birthday"));
-            System.out.println("");
+            System.out.println();
         }
         rs.close();
         statement.close();
